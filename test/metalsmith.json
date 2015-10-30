@@ -1,0 +1,12 @@
+{
+  "source"      : "test",
+  "destination" : "test/output",
+  "plugins"     : {
+    "../index.js"  : {
+      "documentation" : "test/library.js"
+    },
+    "metalsmith-jade" : {
+      "useMetadata" : true
+    }
+  }
+}

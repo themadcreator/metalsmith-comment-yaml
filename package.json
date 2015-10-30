@@ -1,0 +1,36 @@
+{
+  "name": "metalsmith-comment-yaml",
+  "version": "0.0.0",
+  "description": "Extract data from YAML in javascript comments.",
+  "main": "index.js",
+  "scripts": {
+    "pretest"    : "./node_modules/.bin/metalsmith --config test/metalsmith.json",
+    "test"       : "diff -q test/docs-expected.html test/output/docs.html  ",
+    "deploy"     : "npm version minor -m \"Update version to %s\" ",
+    "postdeploy" : "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/themadcreator/metalsmith-comment-yaml.git"
+  },
+  "keywords": [
+    "metalsmith",
+    "yaml",
+    "comment"
+  ],
+  "author": "themadcreator@github",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/themadcreator/metalsmith-comment-yaml/issues"
+  },
+  "homepage": "https://github.com/themadcreator/metalsmith-comment-yaml#readme",
+  "dependencies": {
+    "ast-types" : "0.8.13",
+    "recast"    : "0.10.x",
+    "js-yaml"   : "3.4.3"
+  },
+  "devDependencies": {
+    "metalsmith"      : "2.1.0",
+    "metalsmith-jade" : "2.0.2"
+  }
+}

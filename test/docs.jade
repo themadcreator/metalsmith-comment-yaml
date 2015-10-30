@@ -1,0 +1,8 @@
+for doc in documentation
+  h1 #{doc.methodName}
+  p.description #{doc.description}
+
+  h3 Arguments
+  ul
+    for arg in doc.arguments
+      li #{arg.argumentName}
